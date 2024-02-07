@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGame - Spel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <h1>Steen, Papier, Schaar, Hamer.</h1>
+   
+    <div class="choices">
+        <button class="Btn">🪨</button>
+        <button class="Btn">📃</button>
+        <button class="Btn">✂️</button>
+        <button class="Btn">🔨</button>
+        <button class="Btn">🪛</button>
+    </div>
+ 
+    <div id="playerText">Speler: </div>
+    <div id="computerText">COMPUTER: </div>
+    <div id="resultText">Resultaat:</div>
+ 
+    <button class="Btn-reset" id="resetBtn" onclick="resetGame()">Reset</button>
+ 
+    <div class="counts">
+        <h4 class="winCounts" id="playerWins"></h4>
+        <h4 class="winCounts" id="computerWins"></h4>
+    </div>
+ 
+    <div class="uitleg">
+        <h2>Uitleg:</h2>
+        <p>Hier is een korte uitleg:<br>
+            <br>
+            🪨 (Steen) pakt ✂️ (Schaar) en 🪛 (Schroevendraaier).<br>
+            📃 (Papier) pakt 🪨 (Steen) en 🔨 (Hamer).<br>
+            ✂️ (Schaar) pakt 📃 (Papier) en 🪛 (Schroevendraaier).<br>
+            🔨 (Hamer) pakt 🪨 (Steen) en ✂️ (Schaar).<br>
+            🪛 (Schroevendraaier) pakt 🔨 (Hamer) en 📃 (Papier).</p>
+    </div>
+ 
+ 
+    <script src="script.js"></script>
+</body>
+</html>
